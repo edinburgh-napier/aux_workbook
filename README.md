@@ -5,6 +5,7 @@ The workbook.tex file provides the outline of the LaTeX document.  Two image fil
 that will work depending on your build approach.
 
 Simple use:
+
 1. Just add a .tex file for each chapter / unit of the module.
 
 2. In workbook.tex, add a `/include(filename)` to add to the document.
