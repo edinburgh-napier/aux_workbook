@@ -1,0 +1,78 @@
+\documentclass[12pt, a4paper, twoside]{book}
+
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[
+	a4paper,
+	outer=2cm,
+	inner=4cm,
+	top=2cm,
+	bottom=2cm
+]{geometry}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{color, soul}
+\usepackage{amsmath}
+\usepackage{titlepic}
+\usepackage{fancyhdr}
+
+\definecolor{grey}{rgb}{0.9, 0.9, 0.9}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{dkred}{rgb}{0.6,0,0.0}
+
+\renewcommand{\chaptername}{Unit}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO, LE]{\small \rightmark}
+\fancyfoot[RO, LE]{\small \thepage}
+
+\begin{document}
+
+\frontmatter
+
+\begin{titlepage}
+\vspace*{5cm}
+\begin{center}
+\includegraphics[width=.5\textwidth]{EdNapUniLogoCMYK}~\\[1cm]
+
+\textsc{\Large Edinburgh Napier University}\\[1.5cm]
+
+\textsc{\LARGE \bfseries [Module Number] [Module Name]}\\[0.5cm]
+
+\hrulefill \\[0.4cm]
+{\huge \bfseries Workbook [Session] \\[0.4cm] }
+\hrulefill \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{center} \large
+\textbf{[Lecturer Name]} \\
+\end{center}
+\end{minipage}
+
+\vfill
+
+\end{center}
+\end{titlepage}
+
+\setcounter{tocdepth}{2}
+
+\cleardoublepage
+
+\tableofcontents
+\listoffigures
+
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+
+\mainmatter
+
+% Add individual include files here for each chapter.
+% e.g. /include{chapter-01}
+
+\backmatter
+
+\bibliographystyle{plain}
+
+\end{document}
